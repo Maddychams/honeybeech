@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Madi Calvert | Bootstrap Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+
+<body>
+<!-- Global Nav -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top globalnav navbar-center" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="index.html"><img class="logo" src="img/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+        <li><a class="page-scroll" href="products.html">Products</a></li>
+        <li><a class="page-scroll" href="#">History</a></li>
+        <li><a class="page-scroll" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+
+<header id="page-top" class="col-xs-12 nopadmarg">
+	<div class="jumbotron index nopadmarg">
+		<div class="container">
+			<h1 class="header">NEW! Beech Nut Bars</h1>
+			<p class="header">Introducing our new "Loads o' Honey Beech" granola bars, packed with nutrients and energy for the long day ahead.</p>
+			<button class="btn btn-default btn-lg index" role="button">Learn More</button>
+		</div>
+	</div>
+</header>
+
+<container class="col-xs-12 nopadmarg">
+	<div class="col-xs-12 col-md-6 top50">
+		<img class="img-responsive" src="img/product1.jpg">
+	</div>
+	<div class="col-xs-12 col-md-6">
+		<h1 class="indexpromo">Show Off Your Inner Beech</h1>
+		<p class="indexpromo">With t-shirts, sweaters and other sick swag</p>
+		<button class="btn btn-default btn-lg index centered" role="button"><a class="index" href="products.html">Buy Now</a></button>
+	</div>
+</container>
+
+<!-- Footer -->
+
+<footer class="col-xs-12">
+	<div class="col-xs-12"><p class="copyright">&copy; Madi Calvert 2016.</p></div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+// Nav Change
+$(window).scroll(function() {
+	if($(this).scrollTop() > 50) {
+	    $('.globalnav').addClass('opaque');
+	    $('.logo').addClass('shrink');
+	} else {
+	    $('.globalnav').removeClass('opaque');
+	    $('.logo').removeClass('shrink');
+	}
+});
+</script>
+</body>
+
+
+</html>

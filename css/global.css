@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Asap:400,700');
+
+/****************************** BODY(S) ******************************/
+
+body {
+	font-family: 'Asap', 'Avenir', sans-serif!important;
+	background-color: #ffd673;
+	margin: 0!important;
+	padding-right: 0!important;
+}
+
+/****************************** GLOBAL ADJUSTMENTS ******************************/
+
+.nopadmarg {
+	padding: 0!important;
+	margin: 0!important;
+}
+.top50 { margin-top: 50px; }
+.top100 { margin: 100px 0 0 0!important; padding: 0!important; }
+
+.close {
+	font-weight: 100;
+	font-size: 3em!important;
+	-webkit-animation-name: rotate 0.8s 1 ease-in-out; 
+	-moz-animation-name: rotate; 
+	-moz-animation-duration: 0.8s; 
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: ease-in-out;
+	animation-name: rotate; 
+	animation-duration:0.8s; 
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+.close:hover {
+	transform: rotate(359deg)!important;
+	-webkit-transform: rotate(359deg) !important;
+	-moz-transform: rotate(359deg) !important;
+	-o-transform: rotate(359deg) !important;
+	-ms-transform: rotate(359deg)!important ;
+}
+
+/****************************** NAV(S) ******************************/
+
+nav div div a img.logo {
+	width: 200px;
+	padding: 0;
+	margin: 0;
+    transition: width .5s ease 0s;
+}
+
+@media (max-width: 599px) {
+	nav div div a img.logo {
+		width: 150px!important;
+	}
+}
+
+
+@media (min-width: 600px){
+	nav div div a img.logo.shrink {
+		width: 150px;
+		transition: width .5s ease 0s;
+	}
+}
+
+nav div a.navbar-brand {
+	padding-left: 50px!important;
+}
+
+.sr-only {
+	border: none!important;
+}
+
+.globalnav {
+	padding: 10px 0;
+	background-color: transparent;
+	border: none;
+	overflow: hidden;
+	z-index: 2;
+    transition: background-color .5s ease 0s;
+}
+
+.globalnav.opaque {
+	background-color: white;
+    transition: background-color .5s ease 0s;
+   	box-shadow: 0px 0px 5px rgba(60,60,60,0.10);
+}
+
+.globalnav a:link,
+.globalnav a:visited { color: #dd8035!important; transition: color .5s; }
+.globalnav a:hover { color: #ffd673!important; }
+.globalnav ul li a { font-weight: 700; letter-spacing: .1em;}
+
+.navbar-brand {padding: 5px 0 0 30px!important;}
+.navbar-right {padding-right: 30px!important;}
+.navbar-default {margin-bottom: 0!important;}
+
+/****************************** INDEX ******************************/
+
+.jumbotron {
+	background-image: url("../img/headerbg3.jpg");
+    min-height: 500px;
+    background-position: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Asap'!important;
+}
+
+.headerimg {
+	background-image: url("../img/headerbg1.jpg")!important;
+}
+
+h1.header {
+	margin-top: 175px;
+	font-family: 'Asap'!important;
+	font-weight: 700;
+	text-shadow: 0 0 15px rgba(220,128,53,.5);
+}
+
+p.header {
+	text-shadow: 0 0 15px rgba(220,128,53,.5);
+}
+
+button.index {
+	margin-top: 50px;
+	letter-spacing: .1em;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: 0;
+	background-color: #dd8035!important;
+	color: #fff;
+	transition: background-color .5s ease;
+	font-size: 1.4em;
+}
+
+button.index:hover {
+	background-color: #ffd673!important;
+	color: #fff;
+	transition: background-color .5s ease;
+}
+
+a.index {
+	color: white;
+	text-decoration: none;
+}
+
+button.centered {
+	display: block;
+	margin: 50px auto;
+	font-size: 1.8em!important;
+}
+
+h1.indexpromo {
+	font-size: 3.6em;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 75px!important;
+	padding: 0 25px;
+}
+
+@media ( min-width: 992px ) {
+	h1.indexpromo {
+		margin-top: 35%!important;
+	}
+}
+
+p.indexpromo {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img.index {
+	max-width: 50%;
+	display: block;
+	margin: 25px auto 50px auto;
+}
+
+@media (min-width: 600px) {
+	img.index {
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 599px) {
+	img.index {
+		max-width: 90%;
+	}
+}
+
+/****************************** PRODUCTS ******************************/
+
+body#products {
+	background-color: rgb(240,240,240);
+}
+
+h1.products {
+	margin: 0!important;
+	padding: 15% 0 0 10%;
+	font-weight: 700;
+}
+
+p.products {
+	margin: 0!important;
+	padding: 0 0 0 10%;
+}
+
+#content {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.productcontainer {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.product {
+	max-width: 300px;
+	display: block;
+	margin: 0 10px 20px 10px;
+}
+
+.product img {
+	max-width: 300px;
+	height: auto;
+}
+
+@media ( min-width: 670px ) {
+	.featured {
+		max-width: 620px;
+	}
+
+	.featured img {
+		max-width: 620px;
+		height: auto;
+	}
+}
+
+div.centered {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+div.textoverlay {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	-webkit-transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	transform-origin: 50%;
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h2.textoverlay {
+	font-size: 1.8em;
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+p.textoverlay {
+/*	top: 60%!important;*/
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+span.textoverlay {
+/*	top: 62%!important;*/
+	font-size: 2em;
+	font-weight: 100;
+	display: inline-block;
+	margin: auto;
+}
+
+.producthover {
+	color: transparent;
+}
+
+.producthover:hover {
+	color: #3D3D3D!important;
+}
+
+/****************************** HOVER EFFECT ******************************/
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  opacity: 0;
+  background-color: rgb(240,240,240);
+  background-size: 100% 100%;
+}
+
+.overlay:hover:before {
+  opacity: 0.9;
+}
+
+/****************************** FOOTER ******************************/
+
+footer {
+	background-color: rgba(240,240,240,.9);
+	margin: 0!important;
+	padding: 10px;
+}
+
+.copyright {
+	margin-top: 20px;
+	text-align: center;
+	color: rgb(30,30,30);
+}

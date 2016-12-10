@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Madi Calvert | Bootstrap Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+
+<body id="products">
+<!-- Global Nav -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top globalnav navbar-center" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="index.html"><img class="logo" src="img/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+        <li><a class="page-scroll" href="products.html">Products</a></li>
+        <li><a class="page-scroll" href="#">History</a></li>
+        <li><a class="page-scroll" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+
+<header id="page-top" class="col-xs-12 nopadmarg">
+	<div class="jumbotron headerimg nopadmarg">
+		<div class="container">
+			<h1 class="header">Products</h1>
+			<p class="header">Providing everything from our blue ribbon honey to super soft t-shirts</p>
+		</div>
+	</div>
+</header>
+
+<div class="col-xs-12 top100">
+	<div class="productcontainer">
+		<a href="#" class="producthover">
+			<div class="product featured overlay">
+				<img class="img-responsive" src="img/product1.png">
+				<div class="textoverlay">
+					<h2 class="textoverlay">Apparel</h2>
+					<p class="textoverlay">From 14$/shirt</p>
+					<span class="glyphicon glyphicon glyphicon-zoom-in textoverlay"></span>
+				</div>
+			</div>
+		</a>
+		<a href="#" class="producthover">
+			<div class="product featured overlay">
+				<img class="img-responsive" src="img/product4.png">
+				<div class="textoverlay">
+					<h2 class="textoverlay">Energy Bars</h2>
+					<p class="textoverlay">From 2.95$/bar</p>
+					<span class="glyphicon glyphicon glyphicon-zoom-in textoverlay"></span>
+				</div>
+			</div>
+		</a>
+		<a href="#" class="producthover">
+			<div class="product overlay">
+				<img class="img-responsive" src="img/product2.png">
+				<div class="textoverlay">
+					<h2 class="textoverlay">Rustic Honey</h2>
+					<p class="textoverlay">From 15$/jar</p>
+					<span class="glyphicon glyphicon glyphicon-zoom-in textoverlay"></span>
+				</div>
+			</div>
+		</a>
+		<a href="" data-toggle="modal" data-target="#modal1" class="producthover">
+			<div class="product overlay">
+				<img class="img-responsive" src="img/product3.png">
+				<div class="textoverlay">
+					<h2 class="textoverlay">Bulk Honey</h2>
+					<p class="textoverlay">From 100$/order</p>
+					<span class="glyphicon glyphicon glyphicon-zoom-in textoverlay"></span>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+<!-- CONTENT -->
+
+<div id="modal1" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <p>yo</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+
+<footer class="col-xs-12">
+	<div class="col-xs-12"><p class="copyright">&copy; Madi Calvert 2016.</p></div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Masonry -->
+<script src="js/masonry.pkgd.min.js"></script>
+
+<script>
+// Masonry
+$(document).ready(function() {
+	var container = document.querySelector('.productcontainer');
+	var msnry = new Masonry( container, {
+
+		columnWidth: 320,
+		itemSelector:'.product',
+		isFitWidth: true,
+	});
+});
+
+// Nav Change
+$(window).scroll(function() {
+	if($(this).scrollTop() > 50) {
+	    $('.globalnav').addClass('opaque');
+	    $('.logo').addClass('shrink');
+	} else {
+	    $('.globalnav').removeClass('opaque');
+	    $('.logo').removeClass('shrink');
+	}
+});
+</script>
+</body>
+
+
+</html>
